@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning css</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color:brown;
+            padding:10px;
+            margin:25px;
+            border:4px solid black;
+            height:200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color:grey;
+            padding:10px;
+            margin:25px;
+            border:4px solid black;
+            height:200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">This is the first box. If we write the height in css without box-sizing it means that there height = 200px only for the content area. <p>but if we write the height with box-sizing:"border-box" it means that this height:200px is for content+padding+content</p> </div>
+    <div class="box box2">This is the Second box. <p>margin collapse concept: This is the concept that if the two margins of the box overlaps than take the greater margin only </p></div>
+</body>
+</html>

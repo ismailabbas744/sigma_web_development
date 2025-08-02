@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            border: 4px solid black;
+            /* background-color: aqua; */
+            margin: 10px auto;
+        }
+        .redbox{
+            background-color: red;
+            color: purple;
+        }
+        .bluebox{
+            background-color: blue;
+        }
+        .brownbox{
+            background-color: brown;
+        }
+        .orangebox{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p>The specificity depends in following rate
+        <b>!important > inline > id selector > class or attribute or pseudo selector > element selector > universal selector</b></p>
+    <h1>The value of specificity for each selector is given below : </h1>
+    <p>Universal selector: 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g *</p>
+    <p>Element selector: 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g &lt;p&gt;&lt;/p&gt;tag, &lt;a&gt;&lt;/a&gt;tag, etc </p>
+    <p>Class, attribute, pseudo selector : 10,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g .box, a[href], a:link etc</p>
+    <p>Id selector : 100,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g #redbox</p>
+    <p>Inline styling: 1000,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g style="color:purple;"</p>
+    <p>!important : 10000,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g background-color: grey ! important;</p>
+    <b>The specificity of p.box.redbox p:first-child [href] is 1 + 10 + 10 + 10 + 10  = 41</b>
+    <br>
+    <b>Note: If the specificity of both are same then the styling apply by position </b>
+    <div class="box redbox">
+        <p>I am box 1</p>
+    </div>
+    <div class="box bluebox">
+        <p>I am box 2</p>
+    </div>
+    <div class="box brownbox">
+        <p>I am box 3</p>
+    </div>
+    <div class="box orangebox">
+        <p>I am box 4</p>
+    </div>
+</body>
+
+</html>

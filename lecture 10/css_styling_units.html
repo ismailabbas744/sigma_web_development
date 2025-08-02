@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Styling Units</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            width: 100vw;
+            height: 25px;
+            background-color: aquamarine;
+        
+        }
+    </style>
+</head>
+<body>
+    <b>width: 100vw:</b>
+    <p>This means that the width is equal to the 100% of viewports width e.g for desktop it is 100% of desktop width and similarly 100% for mobile and so on.</p>
+    <br>
+    <b>width: 100vh:</b>
+    <p>This is same as above but this is 100% fo viewport height</p>
+    <br>
+    <b>width: 1.5em: </b>
+    <p>This means that the width is equal to the 1.5x of the width given to it by parent e.g if parent width:100px then the width: 1.5em means its width:150px  i.e 1.5(100) = 150 </p>
+    <br>
+    <b>width: 1.5rem </b>
+    <p>This means that its width is 1.5x of the width of the root e.g if html{
+        width: 100px} then its width:150px
+    </p>
+    <br>
+    <b>width: 100vmin</b>
+    <p>This means that its width is equal to the 100% of the viewport minimum i.e in laptop height is less than width so it is 100 of width of the laptop. And in mobile the vmin is width i.e width of mobile is less than height so it is 100% of the width of the mobile</p>
+
+    <nav>
+
+    </nav>
+
+</body>
+</html>

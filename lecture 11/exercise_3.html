@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .card {
+            margin: 20px auto;
+            height: 86vh;
+            width: 24vw;
+            border: 1px solid rgb(163, 163, 163);
+            border-radius: 14px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .pic_area {
+            height: 46%;
+            width: 100%;
+            /* border: 1px solid grey; */
+            border-radius: 14px;
+            margin-bottom: 24px;
+
+        }
+
+        .pic_area img {
+            height: 100%;
+            width: 100%;
+            border-radius: 14px;
+        }
+
+        .card .tags_area span {
+            border: 1px solid rgb(163, 163, 163);
+            border-radius: 20px;
+            padding: 6px;
+            color: grey;
+            margin-left: 10px;
+        }
+
+        .tags_area,
+        .heading_area,
+        .description_area,
+        .button_area {
+            width: 100%;
+            /* border: 1px solid grey; */
+            margin-top: 1.2vh;
+            padding-left: 8px;
+            box-sizing: border-box;
+        }
+
+        .tags_area {
+            height: 5vh;
+            /* padding-left: 14px; */
+
+
+        }
+
+        .heading_area {
+            height: 6vh;
+
+        }
+
+        .description_area {
+            height: 18vh;
+            color: grey;
+
+        }
+
+        .button_area {
+            height: 6vh;
+
+        }
+
+        .button_area input {
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(183, 221, 247);
+            color: blue;
+            margin-left:7.5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="pic_area"><img
+                src="https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="desert pic"></div>
+        <div class="tags_area">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="heading_area">
+            <h2>My First Heading</h2>
+        </div>
+        <div class="description_area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem tempora
+            sint id expedita ex deserunt, quam ipsam nesciunt minima nulla velit quos perferendis dolorum!</div>
+        <div class="button_area"><input type="button" value="Read More"></div>
+    </div>
+</body>
+
+</html>

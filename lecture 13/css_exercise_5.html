@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Exercise 5</title>
+</head>
+<style>
+    * {
+        padding: o;
+        margin: 0;
+    }
+
+    header {
+        background-color: rgb(175, 96, 249);
+        height: 25px;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 4px 14px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 0px 8px;
+    }
+
+    main {
+        height: 800px;
+        width: 1200px;
+        background-color: black;
+        margin: 0px 34px;
+        /* position: relative; */
+    }
+
+    .cards {
+        height: 500px;
+        background-color: grey;
+        display: flex;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        border: 2px solid black;
+        margin: 20px 86px;
+
+    }
+
+    .card:nth-child(2) {
+        background-color: rgb(6, 140, 224);
+    }
+
+    .message {
+        height: 150px;
+        width: 800px;
+        background-color: brown;
+        border: 2px solid white;
+        border-radius: 48px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 60px 0px;
+        margin: auto;
+    }
+
+    footer {
+        height: 25px;
+        background-color: rgb(242, 156, 156);
+        text-align: center;
+    }
+
+    main img {
+        width: 86px;
+        border-radius: 50%;
+        position: fixed;
+        top: 484px;
+        left: 1084px;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg" alt="sun pic">
+        <div class="message">
+            <h2>Welcome to learning sigma web development course</h2>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright. All the copyrights are reserved.</p>
+    </footer>
+</body>
+
+</html>

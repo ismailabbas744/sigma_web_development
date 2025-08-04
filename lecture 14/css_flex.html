@@ -5,6 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 200px;
+            border: 4px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* gap : row-gap column-gap */
+            gap: 4px 8px;
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .items {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+        }
+        .item-4{
+            flex-grow: 4;
+            /* align-self: flex-end; */
+            order:1;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,16 +45,64 @@
         <li>flex-direction: row // use to arrange in row it may be column</li>
         <li>gap: 40 //use to add space or gap</li>
         <li>align-content: center // use to align content i.e all the content center</li>
-        <li>flex-wrap: wrap // use to wrap items i.e if the with of the container is full then the new items arrange in next line or row </li>
+        <li>flex-wrap: wrap // use to wrap items i.e if the with of the container is full then the new items arrange in
+            next line or row </li>
     </ol>
 
     <h2>Properties apply on item</h2>
-    <ul><ol>
-        <li>order:1 // by default the order of each element is zero so if we apply order of 1 then if goes to the end .it can be 2, 3, 4 ....</li>
-        <li>flex-grow: 4 // it means that this element can take the space of 4 items</li>
-        <li>flex-shrink: 2 // this means that if the width decreases and there is no space left then first of all this element shrinks to its half size and then all the other including this element shrinks accordingly</li>
-        <li>align-self: flex-start // this means that this element align itself to the start of the flex</li>
-    </ol></ul>
+    <ul>
+        <ol>
+            <li>order:1 // by default the order of each element is zero so if we apply order of 1 then if goes to the
+                end .it can be 2, 3, 4 ....</li>
+            <li>flex-grow: 4 // it means that this element can take the space of 4 items</li>
+            <li>flex-shrink: 2 // this means that if the width decreases and there is no space left then first of all
+                this element shrinks to its half size and then all the other including this element shrinks accordingly
+            </li>
+            <li>align-self: flex-start // this means that this element align itself to the start of the flex</li>
+        </ol>
+    </ul>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+        <div class="items">6</div>
+    </div>
 </body>
 
 </html>

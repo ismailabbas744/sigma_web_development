@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and Object position</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        .box img{
+            width: 300px;
+            height: 300px;
+            /* object-fit: cover;
+            object-position: top right; */
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Object ft and Object position</h1>
+    <p><b>object-fit: cover</b> // this means that the image with width and height can in the area without losing its
+        aspect ratio but in this some part of image may be cut off or crop</p>
+    <p><b>object-fit: contain</b> // this means that the image does not lose its aspect ratio but may be some part of
+        the width and height is left empty</p>
+    <p><b>object-position: top right </b>// this is used when some part of image is cut during object-fit: cover so if
+        we want some specific part of the image that is more important or for any reason then we have to use this or
+        something like bottom left or center center or top left etc</p>
+
+
+    <div class="box">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" alt="">
+    </div>
+</body>
+
+</html>

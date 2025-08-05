@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Exercise 8</title>
+<style>
+    .container{
+        height: 500px;
+        width: 87vw;
+        background-color: blue;
+        position: relative;
+    }
+    .ball{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        animation: yAnimation  8s ease-out;
+        
+    }
+    @keyframes yAnimation {
+        0%{
+            
+        }
+        10%{
+            transform: translateY(-500px) translateX(100px);
+        }
+        20%{
+            transform: translateY(0px) translateX(100px);
+            
+        }
+        30%{
+            transform: translateY(0px) translateX(100px);
+            
+        }
+        40%{
+            transform: translateY(-400px) translateX(200px);
+
+        }
+        50%{
+            transform: translateY(0px) translateX(200px);
+
+        }
+        60%{
+            transform: translateY(-200px) translateX(300px);
+
+        }
+        70%{
+            transform: translateY(0px) translateX(300px);
+
+        }
+        80%{
+            transform: translateY(-50px) translateX(400px);
+
+        }
+        90%{
+            transform: translateY(0px) translateX(400px);
+
+        }
+        95%{
+            transform: translateY(-25px) translateX(500px);
+
+        }
+        100%{
+            transform: translateY(0px) translateX(500px);
+
+        }
+        
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

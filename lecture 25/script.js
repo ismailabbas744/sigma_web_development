@@ -6,7 +6,7 @@ cont.setAttribute("style", "border: 2px solid black;color: black; min-height: 40
 // console.log(cont);
 
 
-function createCard(title, cName, monthOld, views, thumbnail) {
+function createCard(title, cName, monthOld, views, duration, thumbnail) {
 
     let card = document.createElement("div");
     card.classList.add("card");
@@ -16,19 +16,35 @@ function createCard(title, cName, monthOld, views, thumbnail) {
     card.style.display = "flex";
     card.style.gap = "8px";
     card.style.backgroundColor = "black";
+    card.style.position = "relative";
     // card.style.alignItems = "center";
 
     let pic = document.createElement("img");
     pic.setAttribute("src", `${thumbnail}`);
     pic.setAttribute("width", "17%");
     pic.setAttribute("height", "100%");
-    pic.setAttribute("style", "object-fit: cover");
+    pic.setAttribute("style", "object-fit: cover; position : relative");
     // console.log(pic)
-    card.append(pic)
+    card.append(pic);
+
+    // let duration = "8:43";
+    let span = document.createElement("span");
+    span.innerText = duration;
+    span.style.backgroundColor = "black"
+    span.style.position = "absolute"
+    span.style.left = "13%"
+    span.style.top = "80%"
+    span.style.padding = "4px"
+    span.style.height = "20px"
+    span.style.color = "#d2d1d1ff"
+
+    pic.insertAdjacentElement("afterend",span );
+    
 
     let descripBox = document.createElement("div");
     descripBox.style.display = "flex";
     descripBox.style.flexDirection = "column";
+    descripBox.style.position = "relative";
     descripBox.style.color = "white";
 
     if (views >= 1000000000) {
@@ -61,20 +77,20 @@ function createCard(title, cName, monthOld, views, thumbnail) {
     cont.append(card);
 }
 
-createCard("Introduction to backend | sigma web development course ","codeWith", "2 months", 100, "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );
+createCard("Introduction to backend | sigma web development course ","codeWith", "2 months", 100, "20:43", "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );
 
 
-createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 100000000, "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );
+createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 100000000, "8:43", "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );
 
 
 
-createCard("Introduction to java | sigma web development course ","codeWith", "2 months", 100000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlx3g-BHxy02qkT1UdbP32eFujMZTB_gajBw&s" );
+createCard("Introduction to java | sigma web development course ","codeWith", "2 months", 100000, "7:38", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlx3g-BHxy02qkT1UdbP32eFujMZTB_gajBw&s" );
 
 
-createCard("Introduction to php | sigma web development course ","codeWith", "2 months", 1000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9p5p0ELRguf37mwge_M7n2Isua_f6lahJQ&s" );
+createCard("Introduction to php | sigma web development course ","codeWith", "2 months", 1000, "6:48", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9p5p0ELRguf37mwge_M7n2Isua_f6lahJQ&s" );
 
 
-createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 10000000000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_lu7q6ZRwI3te6MXdsPe6hG9QFSu8QlOW_A&s" );
+createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 10000000000, "7:50", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_lu7q6ZRwI3te6MXdsPe6hG9QFSu8QlOW_A&s" );
 
 
-createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 100000000000, "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );
+createCard("Introduction to frontend | sigma web development course ","codeWith", "2 months", 100000000000, "8:40", "https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D" );

@@ -1,0 +1,37 @@
+This is the first file that i am creating using commonjs writeFile
+
+
+
+ This is the text after append i.e it does not remove the previous text in the filehellohellohellohello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello
+
+
+
+hello

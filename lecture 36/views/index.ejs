@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin-left: 48vw;
+            margin-top: 48vh;
+            height: 50px;
+            width: 150px;
+            background-color: aquamarine;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" id="generate" value="Generate">
+
+
+
+
+
+
+
+    <script>
+
+
+        generate.addEventListener("click", async()=>{
+           let a = await fetch('/generate');
+           let b = await a.text();
+           console.log(b)
+
+        })
+        
+    </script>
+</body>
+
+</html>
